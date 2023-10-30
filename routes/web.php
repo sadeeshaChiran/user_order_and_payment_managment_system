@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/inputCSVFile', [PaymentController::class, "addCSVfille"])->name('csvfile');
 
 Route::get('/userdetails/{userid}', [PaymentController::class, 'index']);
 
