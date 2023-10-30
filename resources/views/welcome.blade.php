@@ -32,6 +32,7 @@
     
 
     <!-- ---- Valitation Error ---- -->
+    @if (isset($data['errors']))
     @if (count($data['errors']) > 0)
     <div class="alert alert-danger mt-5">
         <h2 class="text-dark ">Validations :</h2>
@@ -68,7 +69,7 @@
 
 
     </div>
-
+    @endif
     @endif
     <!-- ==== -->
 
